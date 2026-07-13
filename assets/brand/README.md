@@ -12,10 +12,13 @@
 | `mark.svg` | 마크 단독 — 잉크 단색 (대표형) |
 | `mark-white.svg` | 마크 단독 — 어두운 배경용 |
 | `wordmark.svg` | 워드마크 단독 (MYRIORAMA, 자간 0.19em, 완전 벡터 패스) |
-| `favicon.svg` | 파비콘 (정사각 캔버스에 액센트 마크) |
-| `png/` | 래스터 파생물 (SVG가 원본, PNG는 재생성 가능) |
+| `favicon.svg` | 파비콘 (정사각 캔버스에 마크) |
+| `mark-square.svg` | 정사각 마크 — 심볼 폭 기준, 위아래 여백 추가 |
+| `png/` | 래스터 파생물 — 투명 배경 (SVG가 원본, 재생성 가능) |
+| `jpg/` | **등록용** — 알파 없는 플랫폼 업로드 폼에는 이쪽을 사용 (Paper 배경) |
 
-`png/`: `logo-2048w` `logo-white-2048w` `mark-1024` `mark-white-1024` `favicon-512` `favicon-32` `apple-touch-icon`(180) `og-image`(1200×630)
+`png/`: `logo-2048w` `logo-white-2048w` `mark-1024` `mark-white-1024` `mark-square-1024` `favicon-512` `favicon-32` `apple-touch-icon`(180) `og-image`(1200×630)
+`jpg/`: `mark-square-1024` `mark-square-512` (프로필·아이콘 칸) · `logo-2048w` (가로 로고 칸)
 
 ## 팔레트
 

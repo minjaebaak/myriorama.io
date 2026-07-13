@@ -54,6 +54,10 @@ write("mark-white.svg", svg(MARK_W, MARK_H, mark_rects(PAPER)))
 fav_body = f'<g transform="translate(30,{(660 - MARK_H) / 2})">\n  {mark_rects(INK)}\n  </g>'
 write("favicon.svg", svg(660, 660, fav_body))
 
+# 정사각 마크: 심볼 폭 기준, 위아래 여백 추가 (등록용 프로필 등)
+sq_body = f'<g transform="translate(0,{(MARK_W - MARK_H) / 2})">\n  {mark_rects(INK)}\n  </g>'
+write("mark-square.svg", svg(MARK_W, MARK_W, sq_body))
+
 # ---------- 워드마크 (글리프 패스 추출) ----------
 font = TTFont(os.path.join(SP, "NotoSansKR.ttf"))
 instantiateVariableFont(font, {"wght": 700}, inplace=True)
