@@ -9,14 +9,13 @@
 |---|---|
 | `logo.svg` | 가로 로크업 (마크 + 워드마크) — 밝은 배경 기본형 |
 | `logo-white.svg` | 가로 로크업 — 어두운 배경용 (전체 화이트) |
-| `mark.svg` | 마크 단독 — 잉크 단색 |
-| `mark-accent.svg` | 마크 단독 — 중앙 하단 셀 블루 액센트 (대표형) |
+| `mark.svg` | 마크 단독 — 잉크 단색 (대표형) |
 | `mark-white.svg` | 마크 단독 — 어두운 배경용 |
 | `wordmark.svg` | 워드마크 단독 (MYRIORAMA, 자간 0.19em, 완전 벡터 패스) |
 | `favicon.svg` | 파비콘 (정사각 캔버스에 액센트 마크) |
 | `png/` | 래스터 파생물 (SVG가 원본, PNG는 재생성 가능) |
 
-`png/`: `logo-2048w` `logo-white-2048w` `mark-1024` `mark-accent-1024` `mark-white-1024` `favicon-512` `favicon-32` `apple-touch-icon`(180) `og-image`(1200×630)
+`png/`: `logo-2048w` `logo-white-2048w` `mark-1024` `mark-white-1024` `favicon-512` `favicon-32` `apple-touch-icon`(180) `og-image`(1200×630)
 
 ## 팔레트
 
@@ -39,7 +38,7 @@
 
 - 셀 100 × 100, 간격 25 (= 셀의 1/4), 모서리 반경 16
 - 5열 × 2행 체커보드 — 1행: 2·4열, 2행: 1·3·5열 (viewBox `0 0 600 225`)
-- 액센트 셀 = 2행 3열 (중앙 하단). **어두운 배경에서는 액센트 없이 전체 화이트** (홈페이지 contact/footer 관례)
+- **심볼은 단색만** — 밝은 배경 Ink, 어두운 배경 Paper. 액센트 셀 미사용 (2026-07-13 결정. Accent 블루는 UI 요소·링크·강조 전용)
 - 로크업: 워드마크 cap-height = 마크 높이의 0.85, 세로 중앙 정렬, 마크-텍스트 간격 = 셀 1.8배
 
 ## 재생성

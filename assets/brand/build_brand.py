@@ -46,12 +46,12 @@ def write(name, content):
         f.write(content)
     print("wrote", name)
 
+# 심볼은 전원 단색 (2026-07-13 사용자 지정: 액센트 셀 미사용)
 write("mark.svg", svg(MARK_W, MARK_H, mark_rects(INK)))
-write("mark-accent.svg", svg(MARK_W, MARK_H, mark_rects(INK, ACCENT)))
 write("mark-white.svg", svg(MARK_W, MARK_H, mark_rects(PAPER)))
 
-# 파비콘: 정사각 660, 마크 중앙 배치 (accent)
-fav_body = f'<g transform="translate(30,{(660 - MARK_H) / 2})">\n  {mark_rects(INK, ACCENT)}\n  </g>'
+# 파비콘: 정사각 660, 마크 중앙 배치
+fav_body = f'<g transform="translate(30,{(660 - MARK_H) / 2})">\n  {mark_rects(INK)}\n  </g>'
 write("favicon.svg", svg(660, 660, fav_body))
 
 # ---------- 워드마크 (글리프 패스 추출) ----------
@@ -114,7 +114,7 @@ def lockup(mark_ink, text_ink, accent=None, name="logo.svg"):
     write(name, svg(round(total_w), MARK_H, body, vb=f"0 0 {total_w:.0f} {MARK_H}"))
     return total_w
 
-logo_w = lockup(INK, INK, ACCENT, "logo.svg")
+logo_w = lockup(INK, INK, None, "logo.svg")
 lockup(PAPER, PAPER, None, "logo-white.svg")
 
 print(f"cap={cap} upem={upem} wordmark_units={word_units_w:.0f} logo_w={logo_w:.0f}")
