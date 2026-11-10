@@ -267,6 +267,34 @@ textarea.field{resize:none}
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation:none !important;transition:none !important}
 }
+
+.footer-link,.contact-mail{overflow-wrap:anywhere;min-width:0}
+.footer-col{min-width:0}
+@media (max-width:429px){.nav-link[data-nav="founder"]{display:none}}
+/* ---- FOUNDER ---- */
+.founder{max-width:1200px;margin:0 auto;padding:clamp(8px,2vw,24px) clamp(20px,4vw,32px) clamp(64px,9vw,96px)}
+.founder-grid{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:clamp(24px,4vw,48px);align-items:start}
+.founder-photo{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:14px;display:block;background:#0F1E33}
+.founder-name{margin:0 0 6px;font-size:clamp(26px,4.5vw,32px);font-weight:700;letter-spacing:-.5px}
+.founder-role{margin:0 0 18px;font-size:15px;line-height:1.7;color:rgba(25,27,30,.7)}
+.founder-facts{margin:0 0 28px;padding:0;list-style:none;display:grid;gap:8px}
+.founder-facts li{font-size:15px;line-height:1.6;color:var(--ink)}
+.founder-sub{margin:0 0 12px;font-size:15px;font-weight:700}
+.founder-sub span{font-weight:500;color:rgba(25,27,30,.55)}
+.fd-list{background:#fff;border:1px solid rgba(25,27,30,.08);border-radius:14px}
+.fd-row{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:15px 18px;border-bottom:1px solid rgba(25,27,30,.07);color:inherit;text-decoration:none}
+.fd-row:last-child{border-bottom:0}
+.fd-row:hover .fd-name{color:var(--accent)}
+.fd-name{font-size:15px;font-weight:600;transition:color .15s}
+.fd-desc{flex:1;font-size:13.5px;line-height:1.6;color:rgba(25,27,30,.55)}
+.fd-domain{font-size:13px;color:var(--accent);white-space:nowrap}
+.footer-biz{margin:10px 0 0;font-size:12px;line-height:1.7;color:rgba(25,27,30,.45)}
+@media (max-width:720px){
+  .founder-grid{grid-template-columns:1fr}
+  .founder-photo{max-width:220px}
+  .fd-row{flex-wrap:wrap;gap:4px 12px}
+  .fd-desc{flex-basis:100%;order:3}
+}
 </style>
 </head>
 <body>
@@ -285,6 +313,7 @@ textarea.field{resize:none}
       <a class="nav-link" href="#svc" data-nav="svc" data-nav-to="svc">서비스</a>
       <a class="nav-link" href="#caps" data-nav="caps" data-nav-to="caps">역량</a>
       <a class="nav-link" href="#phil" data-nav="phil" data-nav-to="phil">철학</a>
+      <a class="nav-link" href="#founder" data-nav="founder" data-nav-to="founder">만든 사람</a>
       <a class="nav-cta" href="#contact" data-nav-to="contact">문의하기</a>
     </nav>
   </div>
@@ -544,6 +573,33 @@ textarea.field{resize:none}
   <p class="phil-note rv" data-reveal style="animation-delay:.14s">다음 카드는 이미 만드는 중입니다.</p>
 </section>
 
+<!-- ===================== FOUNDER ===================== -->
+<section id="founder" class="founder">
+  <div class="svc-head rv" data-reveal>
+    <div class="kicker">FOUNDER</div>
+    <h2 class="section-title">만든 사람</h2>
+  </div>
+  <div class="founder-grid rv" data-reveal>
+    <img class="founder-photo" src="/assets/founder/minjae.jpg" width="640" height="640" alt="박민재" loading="lazy" decoding="async">
+    <div>
+      <p class="founder-name">박민재</p>
+      <p class="founder-role">MYRIORAMA 대표 · 주식회사 아크링크 대표이사(2024 설립)<br>디지털 범죄를 분석하고 막는 보안 기술을 만들고, 그 기술을 비즈니스 서비스로 운영합니다.</p>
+      <ul class="founder-facts">
+        <li>등록특허 제10-3039771호 발명자 — 「피싱 피해 정보 유출 차단 및 피해자 보호 시스템」</li>
+        <li>WACON 2025 사이버보안 우수기업 CEO 부문 수상</li>
+        <li>SBS Biz 인터뷰(2026.1) — 신종 영상통화 피싱 수법 설명</li>
+      </ul>
+      <p class="founder-sub">아크링크 <span>— 디지털 범죄로부터 일상을 지키는 보안 전문 기업</span></p>
+      <div class="fd-list">
+        <a class="fd-row" href="https://arklink.co.kr" target="_blank" rel="noopener"><span class="fd-name">아크링크</span><span class="fd-desc">몸캠피싱·딥페이크 등 디지털 범죄 피해 대응</span><span class="fd-domain">arklink.co.kr</span></a>
+        <a class="fd-row" href="https://security.arklink.co.kr" target="_blank" rel="noopener"><span class="fd-name">아크링크 보안솔루션</span><span class="fd-desc">기업·기관 보안, 악성앱·피싱 위협 분석</span><span class="fd-domain">security.arklink.co.kr</span></a>
+        <a class="fd-row" href="https://drphishing.ai" target="_blank" rel="noopener"><span class="fd-name">닥터피싱</span><span class="fd-desc">피싱·스팸 경고, 악성앱 검사, 딥페이크 탐지 앱</span><span class="fd-domain">drphishing.ai</span></a>
+        <a class="fd-row" href="https://deep-scan.ai" target="_blank" rel="noopener"><span class="fd-name">DeepScan</span><span class="fd-desc">딥페이크·유출 영상 재유포 탐지</span><span class="fd-domain">deep-scan.ai</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===================== CONTACT ===================== -->
 <section id="contact" class="contact">
   <div class="contact-panel rv" data-reveal>
@@ -557,7 +613,7 @@ textarea.field{resize:none}
       </div>
       <h2 class="contact-title">다음 장면을<br>함께 그려볼까요?</h2>
       <p class="contact-sub">도입 상담, 제휴, 프로젝트 의뢰 —<br>어떤 이야기든 편하게 남겨 주세요. 빠르게 답해 드리겠습니다.</p>
-      <a class="contact-mail" href="mailto:hello@myriorama.com">hello@myriorama.com</a>
+      <a class="contact-mail" href="mailto:ceo.myriorama@gmail.com">ceo.myriorama@gmail.com</a>
     </div>
     <form class="contact-form" id="contact-form">
       <div class="contact-form-row">
@@ -584,6 +640,7 @@ textarea.field{resize:none}
         <span class="footer-brand-name">MYRIORAMA</span>
       </div>
       <p class="footer-copy">비즈니스의 모든 장면을, 하나의 흐름으로.<br>© 2026 MYRIORAMA. All rights reserved.</p>
+      <p class="footer-biz">상호 만경화 · 대표 박민재 · 사업자등록번호 702-71-00654</p>
     </div>
     <div class="footer-cols">
       <div class="footer-col">
@@ -594,7 +651,7 @@ textarea.field{resize:none}
       </div>
       <div class="footer-col">
         <span class="footer-col-title">문의</span>
-        <a class="footer-link" href="mailto:hello@myriorama.com">hello@myriorama.com</a>
+        <a class="footer-link" href="mailto:ceo.myriorama@gmail.com">ceo.myriorama@gmail.com</a>
         <button class="footer-link" type="button" data-nav-to="__top">맨 위로 ↑</button>
       </div>
     </div>
@@ -627,7 +684,7 @@ textarea.field{resize:none}
   function spy() {
     var y = window.scrollY + 130;
     var cur = null;
-    ['svc', 'caps', 'phil'].forEach(function (id) {
+    ['svc', 'caps', 'phil', 'founder'].forEach(function (id) {
       var el = document.getElementById(id);
       if (el && el.offsetTop <= y) cur = id;
     });
@@ -665,7 +722,7 @@ textarea.field{resize:none}
         '',
         message
       ].join('\n');
-      location.href = 'mailto:hello@myriorama.com'
+      location.href = 'mailto:ceo.myriorama@gmail.com'
         + '?subject=' + encodeURIComponent('[MYRIORAMA] 문의')
         + '&body=' + encodeURIComponent(body);
     });
