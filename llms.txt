@@ -15,6 +15,7 @@
 
 ## 핵심 페이지
 - [메인](https://myriorama.io/): 서비스 · 역량 · 철학 · 만든 사람 · 문의
+- [블로그](https://blog.myriorama.io/): MYRIORAMA 블로그
 
 ## 만든 사람
 - 박민재 — MYRIORAMA 대표 · 주식회사 아크링크 대표이사(2024 설립)
