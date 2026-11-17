@@ -13,8 +13,13 @@
 - [FANAGEMENT](https://fanagement.net): 고객 접점을 한 곳에. 고객 관리부터 결제 · 통화 · 메신저까지, 흩어진 고객 접점을 하나의 플랫폼에 모은다. (CRM · 결제 · 메신저)
 - [NAVIFACT](https://navifact.ai): 나비효과로 읽는 세계. 사건을 팩트 단위로 추적하고, 인과관계 그래프로 맥락을 읽는다. (인과 그래프 · 타임라인 · 다국어)
 
+## 제작 · 구성
+- 홈페이지 개발: 기획, 디자인, 개발, 운영을 맡는다. 직접 만들고 운영하는 사이트는 myriorama.io, blog.myriorama.io, serpering.com, fanagement.net, navifact.ai다.
+- 보안솔루션 탑재: MYRIORAMA가 만드는 홈페이지에 주식회사 아크링크의 보안솔루션(https://security.arklink.co.kr)을 함께 탑재한다. 항목은 서버 · 웹 보안 강화와 부정 접속 분석(즉시 제공), 이상 행위 감시 · 자동 차단, 서버 상시 감시 · 장애 알림, 백업 · 복구 검증(맞춤 개발)이다. 탑재할 항목과 범위는 상담으로 정한다. 관제 인력의 상시 대응이나 보안관제센터 운영 대행은 포함하지 않는다.
+
 ## 핵심 페이지
 - [메인](https://myriorama.io/): 서비스 · 역량 · 철학 · 만든 사람 · 문의
+- [서비스](https://myriorama.io/services/): 홈페이지 개발, 아크링크 보안솔루션 탑재, 운영 중인 서비스 세 가지, 다루는 영역 여덟 가지
 - [블로그](https://blog.myriorama.io/): MYRIORAMA 블로그
 
 ## 만든 사람
